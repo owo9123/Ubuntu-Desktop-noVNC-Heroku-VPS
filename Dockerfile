@@ -27,10 +27,10 @@ RUN apt-get update && \
     apt install falkon -y  && \
     sudo apt update -y  && \
     sudo apt upgrade -y && \
-    wget --version
+    wget --version -y  && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -y  && \
     sudo dpkg -i google-chrome-stable_current_amd64.deb -yy  && \
-    apt-get install -f
+    apt-get install -f -y &&\
     apt-get autoclean -y  && \
     apt-get autoremove
 
